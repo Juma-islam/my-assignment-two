@@ -45,7 +45,7 @@
 nav {
     justify-content: space-between;
     align-items: center;
-    margin: 30px 50px 0px 50px;
+    margin: 30px 0px;
 }
 
 .mobile-icon {
@@ -75,7 +75,7 @@ nav li a {
 .banner {
     justify-content: center;
     align-items: center;
-    margin: 50px 50px;
+
 }
 
 
@@ -89,6 +89,10 @@ nav li a {
 }
 
 /* card design  */
+.card-section {
+    margin-top: 50px;
+}
+
 .our {
     font-size: 2.8125rem;
     font-weight: 700;
@@ -109,12 +113,13 @@ nav li a {
     max-width: 275px;
     height: 470px;
     text-align: center;
-    border: 3px solid blueviolet;
+
 }
-.box-container{
+
+.box-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     margin-top: 40px;
 }
 
@@ -140,6 +145,119 @@ nav li a {
     margin: 20px 0px;
     max-width: 275px;
     height: 50px;
+}
+
+/* Flower & Plants design  */
+
+
+/* latest deal section  */
+.deal {
+    margin-top: 50px;
+}
+
+.latest-deal {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.shop-card {
+    margin-top: 50px;
+}
+
+.shop-one {
+    background-image: url("../assets/deal-bloom.png");
+    padding: 60px 40px 100px 40px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: rgba(0, 0, 0, 0.4);
+
+}
+
+.latest {
+    color: var(--primary-color);
+}
+
+.shop-two {
+    background-image: url("../assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    grid-row: span 2;
+    text-align: center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 40px 100px 40px;
+    color: rgb(255, 255, 255);
+    opacity: rgba(0, 0, 0, 0.4);
+}
+
+.shop-three {
+    background-image: url("../assets/deal-ana.png");
+    background-repeat: no-repeat;
+    padding: 60px 40px 100px 40px;
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    opacity: rgba(0, 0, 0, 0.4);
+}
+
+.zabo,
+.zabo-shop {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.shop-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* background part  */
+.background-part {
+    background-image: url("../assets/news-letter-bg.png");
+    max-width: 1140px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    border-radius: 8px;
+   
+}
+
+.background-part input[type="email"] {
+    padding: 15px 300px 15px 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.background-part h1 {
+    color: rgb(255, 255, 255);
+}
+
+.background-content {
+    /* max-width: 860px;
+    height: 200px; */
+    text-align: center;
+     padding: 150px 250px; 
+    margin: auto;
+}
+
+.btn {
+    color: white;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    padding: 15px 35px;
+    border: none;
+    margin-left: -4px;
 }
 
 /* responsive for mobile  */
