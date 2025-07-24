@@ -420,10 +420,12 @@ ul .sub-heading {
     .flower-plants-content br {
         display: none;
     }
-    .shop-card {
+    .shop-card,
+    .footer-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+    margin: auto;
 }
 .shop-two{
        padding: 60px 40px 100px 40px;
