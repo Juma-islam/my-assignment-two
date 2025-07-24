@@ -34,6 +34,12 @@
 
 }
 
+.heading {
+    font-family: "Noto Serif", serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
 .sub-heading {
     font-size: 1.25rem;
     color: rgba(0, 0, 0, 0.5);
@@ -93,11 +99,6 @@ nav li a {
     margin-top: 50px;
 }
 
-.our {
-    font-size: 2.8125rem;
-    font-weight: 700;
-}
-
 .indulge {
     max-width: 850px;
 
@@ -148,7 +149,33 @@ nav li a {
 }
 
 /* Flower & Plants design  */
+.flower-plants {
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+    position: relative;
+}
 
+.badge {
+    position: absolute;
+    top: -20%;
+    left: 30%;
+}
+
+.badge-img {
+    width: 250px;
+    height: 250px;
+
+
+}
+
+.flower-plants div {
+    width: 50%;
+}
+
+ul .sub-heading {
+    margin-top: 30px;
+}
 
 /* latest deal section  */
 .deal {
@@ -221,14 +248,18 @@ nav li a {
 /* background part  */
 .background-part {
     background-image: url("../assets/news-letter-bg.png");
-    max-width: 1140px;
+    max-width: 1280px;
     height: 400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
     border-radius: 8px;
-   
+    max-width: 1140px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
 }
 
 .background-part input[type="email"] {
@@ -247,7 +278,7 @@ nav li a {
     /* max-width: 860px;
     height: 200px; */
     text-align: center;
-     padding: 150px 250px; 
+    padding: 150px 250px;
     margin: auto;
 }
 
@@ -260,8 +291,37 @@ nav li a {
     margin-left: -4px;
 }
 
+/* footer section  */
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    /* place-items: center;  */
+    margin-top: 50px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    line-height: 2;
+    color: rgb(107, 114, 128);
+}
+
+.footer-section ul li {
+    list-style-type: none;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
 /* responsive for mobile  */
 @media screen and (max-width:576px) {
+
     nav {
         display: none !important;
     }
@@ -295,4 +355,77 @@ nav li a {
     .banner-content {
         margin-top: 25px 10px 0px 10px;
     }
+
+    .our-plants ,
+    .latest-deal{
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .box {
+        max-width: 175px;
+        height: auto;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        margin-top: 30px;
+        place-items: center;
+    }
+
+    .primary-btn {
+        color: white;
+        background-color: var(--primary-color);
+        padding: 5px 45px;
+        font-weight: 600;
+        border: none;
+        margin: 20px 0px;
+        max-width: 175px;
+        height: 50px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .flower-plants {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        gap: 50px;
+    }
+
+    .flower-plants img {
+        max-width: 350px;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .flower-plants-content {
+        max-width: 330px;
+    }
+
+    .flower-plants-content br {
+        display: none;
+    }
+    .shop-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.shop-two{
+       padding: 60px 40px 100px 40px;
+}
 }
