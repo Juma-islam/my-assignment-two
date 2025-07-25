@@ -78,14 +78,16 @@ nav li a {
 
 /* banner design */
 
- .banner img{
-     width: 100%; 
+.banner img {
+    width: 100%;
 }
+
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 50px;
+    margin-top: 30px;
 }
 
 .banner-heading {
@@ -99,17 +101,14 @@ nav li a {
     color: rgba(0, 0, 0, 0.5);
     font-family: "Inter", sans-serif;
 }
-.banner-content{
+
+.banner-content {
     flex: 1;
 }
-.banner-img{
+
+.banner-img {
     flex: 1;
 }
-
-
-
-
-
 
 .fresh {
     color: var(--primary-color);
@@ -193,11 +192,11 @@ nav li a {
 .badge-img {
     width: 250px;
     height: 250px;
-    filter: drop-shadow(-4px 10px 4px 0px rgba(0.25, 0, 0, 0.25));
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 }
 
 .badge-img img {
-    filter: drop-shadow(-4px 10px 4px 0px rgba(0.25, 0, 0, 0.25));
+    filter: drop-shadow(-4px 10px 4px 0px rgba(0, 0, 0, 0.25));
 }
 
 .flower-plants div {
@@ -269,10 +268,11 @@ ul .sub-heading {
     font-size: 1.5rem;
     font-weight: 700;
 }
-.shop-now{
-color: rgb(255, 255, 255);
- text-decoration: underline;
- font-weight: 600;
+
+.shop-now {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .shop-card {
@@ -304,7 +304,7 @@ color: rgb(255, 255, 255);
 
 .background-part h1 {
     color: rgb(255, 255, 255);
-
+    width: 100%;
 }
 
 form input[type="email"] {
@@ -370,24 +370,27 @@ form input[type="email"] {
         gap: 20px;
     }
 
-      
-.banner{
-    flex-direction: column-reverse;
-    padding: 20px 0px;
-}
- .sub-heading {
+
+    .banner {
+        flex-direction: column-reverse;
+        padding: 20px 0px;
+    }
+
+    .sub-heading {
         font-size: 1rem;
- }
- .banner-heading {
-    font-size: 2.5rem;
-    font-weight: 600;
-    /* flex: 1; */
-}
+    }
+
+    .banner-heading {
+        font-size: 2.5rem;
+        font-weight: 600;
+        /* flex: 1; */
+    }
+
     .badge-img {
         width: 100%;
     }
 
-    
+
     .banner-heading {
         font-size: 2rem;
         font-weight: 600;
@@ -397,8 +400,6 @@ form input[type="email"] {
         font-size: 1rem;
     }
 
-    
-
     .our-plants,
     .latest-deal {
         max-width: 350px;
@@ -406,7 +407,8 @@ form input[type="email"] {
         margin: auto;
     }
 
-    .latest-deal h3, .our-plants h3 {
+    .latest-deal h3,
+    .our-plants h3 {
         text-align: center;
         margin: auto;
     }
@@ -526,7 +528,9 @@ form input[type="email"] {
     }
 
     .join {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        width: 100%;
+        display: inline;
     }
 
     .footer-heading {
