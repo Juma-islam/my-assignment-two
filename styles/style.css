@@ -269,7 +269,11 @@ ul .sub-heading {
     font-size: 1.5rem;
     font-weight: 700;
 }
-
+.shop-now{
+color: rgb(255, 255, 255);
+ text-decoration: underline;
+ font-weight: 600;
+}
 
 .shop-card {
     display: grid;
@@ -402,8 +406,9 @@ form input[type="email"] {
         margin: auto;
     }
 
-    .latest-deal h3 {
+    .latest-deal h3, .our-plants h3 {
         text-align: center;
+        margin: auto;
     }
 
     .box {
