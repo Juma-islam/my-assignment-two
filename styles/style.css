@@ -489,7 +489,9 @@ form input[type="email"] {
     .shop-three {
         padding: 30px 20px 50px 20px;
     }
-
+    .shop-one{order: 1;}
+    .shop-three{order: 3;}
+.shop-two{order: 2;}
     .heading {
         max-width: 220px;
         width: 100%;
