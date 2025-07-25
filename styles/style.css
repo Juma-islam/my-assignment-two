@@ -77,26 +77,15 @@ nav li a {
 }
 
 /* banner design */
+
+ .banner img{
+     width: 100%; 
+}
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 50px;
-    gap: 250px;
-}
-
-.banner-img img {
-    /* width: 100%; */
-    max-width: 100%;
-    height: auto;
-}
-
-.banner-content {
-    width: 50%;
-}
-
-.banner-img {
-    width: 100%;
+    padding: 50px 50px;
 }
 
 .banner-heading {
@@ -104,6 +93,23 @@ nav li a {
     font-weight: 700;
     /* flex: 1; */
 }
+
+.sub-heading {
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+}
+.banner-content{
+    flex: 1;
+}
+.banner-img{
+    flex: 1;
+}
+
+
+
+
+
 
 .fresh {
     color: var(--primary-color);
@@ -182,17 +188,16 @@ nav li a {
     position: absolute;
     top: -20%;
     left: 33%;
-  
 }
 
 .badge-img {
     width: 250px;
     height: 250px;
-
-
+    filter: drop-shadow(-4px 10px 4px 0px rgba(0.25, 0, 0, 0.25));
 }
-.badge-img img{
-  box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+
+.badge-img img {
+    filter: drop-shadow(-4px 10px 4px 0px rgba(0.25, 0, 0, 0.25));
 }
 
 .flower-plants div {
@@ -361,26 +366,24 @@ form input[type="email"] {
         gap: 20px;
     }
 
-    .banner {
-        flex-direction: column-reverse;
-        max-width: 400px;
-        margin: auto;
-        gap: 0px;
-        padding: 0px 0px;
-    }
-
-    .banner-img img {
-        width: 100%;
-    }
-
+      
+.banner{
+    flex-direction: column-reverse;
+    padding: 20px 0px;
+}
+ .sub-heading {
+        font-size: 1rem;
+ }
+ .banner-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* flex: 1; */
+}
     .badge-img {
         width: 100%;
     }
 
-    .banner-content {
-        width: 100%;
-    }
-
+    
     .banner-heading {
         font-size: 2rem;
         font-weight: 600;
@@ -390,19 +393,16 @@ form input[type="email"] {
         font-size: 1rem;
     }
 
-    .banner-content {
-        /* margin-top: 25px 10px 0px 10px; */
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+    
 
     .our-plants,
     .latest-deal {
         max-width: 350px;
         text-align: center;
-         margin: auto;
+        margin: auto;
     }
-    .latest-deal h3{
+
+    .latest-deal h3 {
         text-align: center;
     }
 
@@ -443,7 +443,7 @@ form input[type="email"] {
     .flower-plants {
         flex-direction: column;
         align-items: center;
-         /* width: 530px;  */
+        /* width: 530px;  */
         margin: auto;
         /* gap: 50px; */
         margin-top: 30px;
@@ -460,14 +460,14 @@ form input[type="email"] {
     }
 
     .heading {
-         font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .flower-plants-content li {
         width: 100%;
 
     }
- 
+
 
     .flower-plants-content br {
         display: none;
@@ -489,9 +489,19 @@ form input[type="email"] {
     .shop-three {
         padding: 30px 20px 50px 20px;
     }
-    .shop-one{order: 1;}
-    .shop-three{order: 3;}
-.shop-two{order: 2;}
+
+    .shop-one {
+        order: 1;
+    }
+
+    .shop-three {
+        order: 3;
+    }
+
+    .shop-two {
+        order: 2;
+    }
+
     .heading {
         max-width: 220px;
         width: 100%;
@@ -504,13 +514,16 @@ form input[type="email"] {
     form input[type="email"] {
         padding: 5px 20px 5px 10px;
     }
+
     .btn {
-    font-weight: 600;
-    padding: 5px 15px;
+        font-weight: 600;
+        padding: 5px 15px;
     }
-    .join{
+
+    .join {
         font-size: 1.5rem;
     }
+
     .footer-heading {
         max-width: 330px;
     }
