@@ -181,7 +181,8 @@ nav li a {
 .badge {
     position: absolute;
     top: -20%;
-    left: 30%;
+    left: 33%;
+  
 }
 
 .badge-img {
@@ -189,6 +190,9 @@ nav li a {
     height: 250px;
 
 
+}
+.badge-img img{
+  box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .flower-plants div {
@@ -395,8 +399,8 @@ form input[type="email"] {
     .our-plants,
     .latest-deal {
         max-width: 350px;
-        margin: auto;
         text-align: center;
+         margin: auto;
     }
     .latest-deal h3{
         text-align: center;
@@ -439,11 +443,11 @@ form input[type="email"] {
     .flower-plants {
         flex-direction: column;
         align-items: center;
-        width: 530px;
+         /* width: 530px;  */
         margin: auto;
-        gap: 50px;
+        /* gap: 50px; */
         margin-top: 30px;
-        padding: 0px 20px;
+        /* padding: 0px 20px; */
     }
 
     .flower-plants div {
@@ -451,7 +455,7 @@ form input[type="email"] {
     }
 
     .flower-plants img {
-        width: 80%;
+        width: 70%;
 
     }
 
@@ -460,9 +464,10 @@ form input[type="email"] {
     }
 
     .flower-plants-content li {
-        width: 80%;
+        width: 70%;
 
     }
+ 
 
     .flower-plants-content br {
         display: none;
